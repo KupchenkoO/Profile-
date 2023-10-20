@@ -11,6 +11,8 @@
 
 </head>
 <body>
+    <!-- <h1 class="logo">Profile</h1> -->
+    
     <nav class="navbar">
         <div class="burger-menu" onclick="toggleMenu()"><img class="menu" src="image/menu.svg"></div>
         <ul class="nav-list" id="navList">
@@ -23,18 +25,47 @@
 
     <div class="profile-info">
             <img class="profile-photo" src="image/profile.jpg">
-            <div class="profile"><button class="image-button" onclick="toggleImage()"></button></div>
+            <div class="profile">
+                <button class="image-button" onclick="toggleImage()"></button>
+            </div>
             <img class="photo" src="image/profile.jpg">
             <div class="over">
                 <h1 class="name">Sandra Lane</h1>
                 <li><img class="pin" src="image/pin.svg">Cherkasy, Ukraine</li> 
-                </div>
+            </div>
+            <div class="button-info">
+                <button class="btn-info"><img class="pin" src="image/mail.svg">Message</button>
+                <button class="btn-info"><img class="pin" src="image/info.svg">Information</button>
+            </div>
     </div>
+    <h1 class="categories">Photo</h1>
+    <div class="photo-container">
+        <img src="image/111.jpg" alt="Photo 1">
+        <img src="image/222.jpg" alt="Photo 2">
+        <img src="image/333.jpg" alt="Photo 3">
+        <img class="box" src="image/profile.jpg" alt="Photo 4">
+    </div>
+    <h1 class="categories">Blog</h1>
+    <div class="gallery">
         
-
-    
-    
-    
+      <button class="prev-button"></button>
+      <button class="next-button"></button>
+        
+        <div class="block">
+            <img class="pin-blog" src="image/blog.svg">
+            <h1 class="blog">Hello!</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi cupiditate similique iusto, tenetur sint dicta necessitatibus fugiat molestias pariatur nostrum accusamus modi odit obcaecati dolorem molestiae eum fuga ipsa.</p>
+        </div>
+        <div class="block hidden">
+            <img class="pin-blog" src="image/blog.svg">
+            <h1 class="blog">Good!</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi cupiditate similique iusto, tenetur sint dicta necessitatibus fugiat molestias pariatur nostrum accusamus modi odit obcaecati dolorem molestiae eum fuga ipsa.</p>
+        </div>
+        <div class="block hidden">
+            <img class="pin-blog" src="image/blog.svg">
+            <h1 class="blog">Welcome!</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi cupiditate similique iusto, tenetur sint dicta necessitatibus fugiat molestias pariatur nostrum accusamus modi odit obcaecati dolorem molestiae eum fuga ipsa.</p>
+        </div>
+      </div>
+      
+    <br><br><br><br><br><br><br><br><br>
     <script src="script.js"></script>
 
 </body>
