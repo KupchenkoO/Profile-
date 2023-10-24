@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 
 </head>
@@ -64,7 +65,63 @@
             <h1 class="blog">Welcome!</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nisi cupiditate similique iusto, tenetur sint dicta necessitatibus fugiat molestias pariatur nostrum accusamus modi odit obcaecati dolorem molestiae eum fuga ipsa.</p>
         </div>
       </div>
-      
+        <div class="btn-block">
+    <button id="musicButton" class="active-button btn-section" onclick="showMusicPlayer()">Музика</button>
+    <button class="btn-section" id="videoButton" onclick="showVideoPlayer()">Відео</button>
+    <button class="btn-section" id="photoButton" onclick="showPhotoPlayer()">Фото</button>
+        </div>
+
+
+    <div id="musicPlayer" class="player">
+      <div class="mymus">
+ 
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+ 
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
+    </div>
+ 
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+ 
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+ 
+    </div>
+
+
+
+
+
+    <div id="videoPlayer" class="player">
+        <p>Відео</p>
+    </div>
+    <div id="photoPlayer" class="player">
+        <p>Фото</p>
+    </div>
+
     <br><br><br><br><br><br><br><br><br>
     <script src="script.js"></script>
 
